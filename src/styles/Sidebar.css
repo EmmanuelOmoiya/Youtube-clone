@@ -1,0 +1,57 @@
+.sidebar{
+    position: static;
+    width: 100%;
+    background-color: #131413;
+    padding: .6rem;
+    height: 3rem;
+    border-bottom: 1px solid rgb(98, 97, 97);
+    display: flex;
+    overflow-x: auto;
+}
+
+
+
+button.explore{
+    width: 4.8rem;
+    color: #fff;
+    background-color: #313231;
+    border-radius: 3px;
+    height: 1.8rem;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+div.explore{
+   border-right: 2px solid #313231;
+   margin-right: .5rem;
+   padding-right: .5rem;
+}
+
+.sideoptions{
+    display: flex;
+    transition: all 0.3s ease-in;
+    font-family: 'Manrope', sans-serif;
+}
+
+.sideoption{
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in;
+    border: 1px solid #454545;
+    background-color: #313231;
+    text-align: center;
+    align-items: center;
+    margin-right: 0.4rem;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+}
+
+
+@media screen and (min-width: 750px) {
+    .sidebar{
+        width: 20%;
+        height: 100vh;
+        position: fixed;
+    }
+}

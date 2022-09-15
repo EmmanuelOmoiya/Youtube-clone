@@ -1,0 +1,23 @@
+.feed{
+    background-color: #1c1c1c;
+    font-family: 'Manrope', sans-serif;
+}
+
+.nothing{
+    padding: 2rem;
+    height: calc(100vh - 6rem);
+    background-color: #1c1c1c;
+    font-family: 'Manrope', sans-serif;
+}
+
+.nothingP{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+@media screen and (min-width: 750px) {
+    .feed{
+        margin-left: 20%;
+        margin-top: 0rem;
+    }
+}

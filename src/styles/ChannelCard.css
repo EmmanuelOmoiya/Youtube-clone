@@ -1,0 +1,24 @@
+.channel-img{
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.channelContent{
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 1.8rem;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.channeltitle{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.subcdr{
+    
+}

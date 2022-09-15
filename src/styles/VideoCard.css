@@ -1,0 +1,39 @@
+.videocard{
+    width: 100%;
+    height: auto;
+}
+
+.videoimg{
+    width: 100%;
+}
+
+.link-channel{
+    text-decoration: none;
+    display: flex;
+    opacity: .7;
+    text-align: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.pol{
+    text-align: center;
+    align-items: center;
+    margin: 0 0.5rem;
+    height: 100%;
+    justify-content: center;
+}
+
+.link-cardName{
+    text-decoration: none;
+}
+
+.cardContent{
+    padding: 1.2rem;
+}
+
+.channelId{
+
+}

@@ -1,0 +1,29 @@
+.videodetail{
+    background-color: #1c1c1c;
+    font-family: 'Manrope', sans-serif;
+}
+
+.videoguy{
+    padding: 1.3rem;
+}
+
+.lokiu{
+    display: flex;
+    font-size: .9rem;
+    opacity: .7;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.lki{
+    text-decoration: none;
+}
+
+.recomm{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.react-player{
+    width: 60%;
+}

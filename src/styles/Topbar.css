@@ -1,0 +1,25 @@
+.topbar{
+    height: 2.6rem;
+    background-color: #131413;
+    padding: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(98, 97, 97);
+}
+
+img.searchBtn{
+    width: 1.2rem;
+    cursor: pointer;
+}
+
+.logo{
+    margin-left: -1rem;
+}
+
+@media screen and (min-width: 750px) {
+    .topbar{
+        position: fixed;
+    }
+}
