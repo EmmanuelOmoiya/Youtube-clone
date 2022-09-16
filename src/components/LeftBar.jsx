@@ -3,7 +3,6 @@ import '../styles/LeftBar.css';
 import { useAppContext } from '../utils/context';
 import { LeftOption } from '../utils/constants';
 import { useNavigate } from 'react-router-dom';
-import test from '../assets/icons/Home.svg';
 
 const LeftBar = () => {
     const navigate = useNavigate();
