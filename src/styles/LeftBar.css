@@ -1,0 +1,47 @@
+.leftbar{
+    display: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+@media screen and (min-width: 750px) {
+    .leftbar{
+        display: block;
+        width: 20%;
+        height: 100vh;
+        position: fixed;
+        margin-top: 4rem;
+    background-color: #131413;
+    }
+
+    .leftbar.close{
+        width: 9%;
+        transition: all 0.3s ease-in;
+    }
+
+    .leftbar.close .leftoptioname{
+        display: none;
+    }
+
+    .leftoption{
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        width: 100%;
+        border: none;
+        height: 4.3rem;
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+
+    .leftoption:hover{
+        background-color: #313231;
+    }
+
+    .leftbar.close .leftoption{
+        height: 5rem;
+    }
+}

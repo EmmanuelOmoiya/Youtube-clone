@@ -7,8 +7,24 @@
   color: #fff;
 }
 
-.app{
+.App{
     background-color: #212423;
     font-family: 'Manrope', sans-serif;
+}
+
+@media screen and (min-width: 750px) {
+  .App::-webkit-scrollbar{
+    width: 9px;
+}
+
+.App::-webkit-scrollbar-track{
+    background-color: #313231;
+}
+
+.App::-webkit-scrollbar-thumb{
+    background-color: #454545;
+    border-radius: 20px;
+    border: 3px solid #313231;
+}
 }
 

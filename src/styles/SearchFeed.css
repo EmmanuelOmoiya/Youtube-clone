@@ -6,3 +6,15 @@
 .searchQ{
     padding: 1rem;
 }
+
+@media screen and (min-width: 750px) {
+    .searchfeed,
+    .nothing{
+        margin-left: 20%;
+        height: 100vh;
+    }
+
+    .nothing{
+        padding-top: 8rem;
+    }
+}

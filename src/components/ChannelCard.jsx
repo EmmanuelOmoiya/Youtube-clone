@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { demoProfilePicture } from '../utils/constants';
 import '../styles/ChannelCard.css';
 
 const ChannelCard = ({ channelDetail }) => {
@@ -9,7 +8,7 @@ const ChannelCard = ({ channelDetail }) => {
       
         <Link to={`/channel/${channelDetail?.id?.channelId}`} className="link">
             <div className="channelContent">
-                <img src={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture}
+                <img src={channelDetail?.snippet?.thumbnails?.high?.url }
                 alt={channelDetail?.snippet?.title} className="channel-img"/>
                 <p className="channeltitle">{channelDetail?.snippet?.title}{' '}</p>
                 {channelDetail?.statistics?.subscriberCount && (

@@ -18,6 +18,33 @@
 @media screen and (min-width: 750px) {
     .feed{
         margin-left: 20%;
-        margin-top: 0rem;
+        padding-left: 1rem;
+        padding-top: 8rem;
+        padding-right: 1rem;
     }
+
+    .feed .nothing{
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .feed.close{
+        margin-left: 9%;
+        transition: all 0.3s ease-in;
+    }
+
+    .feed::-webkit-scrollbar{
+        width: 9px;
+    }
+
+    .feed::-webkit-scrollbar-track{
+        background-color: #313231;
+    }
+
+    .feed::-webkit-scrollbar-thumb{
+        background-color: #454545;
+        border-radius: 20px;
+        border: 3px solid #313231;
+    }
+    
 }

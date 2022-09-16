@@ -6,10 +6,9 @@
     height: 3rem;
     border-bottom: 1px solid rgb(98, 97, 97);
     display: flex;
+    scroll-behavior: smooth;
     overflow-x: auto;
 }
-
-
 
 button.explore{
     width: 4.8rem;
@@ -31,6 +30,7 @@ div.explore{
     display: flex;
     transition: all 0.3s ease-in;
     font-family: 'Manrope', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .sideoption{
@@ -50,8 +50,59 @@ div.explore{
 
 @media screen and (min-width: 750px) {
     .sidebar{
+        padding-top: 4rem;
+        height: 6.5rem;
+        width: calc(100vw - 20%);
+        margin-left: 20%;
+        position: fixed;
+        border-bottom: none;
+    }
+
+    .sidebar.close{
+        margin-left: 9%;
+        width: calc(100vw - 9%);
+        transition: all 0.3s ease-in;
+    }
+
+    div.explore{
+        display: none;
+    }
+
+    .sideoption{
+        margin-left: .3rem;
+    }
+
+    .sidebar::-webkit-scrollbar{
+        width: 9px;
+    }
+
+    .sidebar::-webkit-scrollbar-track{
+        background-color: #313231;
+    }
+
+    .sidebar::-webkit-scrollbar-thumb{
+        background-color: #454545;
+        border-radius: 20px;
+        border: 3px solid #313231;
+    }
+    /* .sidebar{
         width: 20%;
         height: 100vh;
         position: fixed;
+        margin-top: 4rem;
+        padding: 1.2em;
+        display: block;
     }
+
+    .sideoptions{
+        display: block;
+    }
+
+    div.explore{
+        margin-bottom: 1rem;
+    }
+
+    .sideoption{
+        margin-bottom: .7rem;
+    } */
 }

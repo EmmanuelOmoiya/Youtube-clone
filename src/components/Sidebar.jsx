@@ -6,9 +6,9 @@ import { SideOptions } from '../utils/constants';
 
 const Sidebar = () => {
   const navigate = useNavigate();
-  const { selectedOption, setSelectedOption } = useAppContext();
+  const { selectedOption, setSelectedOption, setSearch, sideOpen } = useAppContext();
   return (
-    <div className="sidebar">
+    <div className={sideOpen ? "sidebar" : "sidebar close" }>
       <div className="explore">
         <button className="explore">Explore</button>
       </div>
@@ -18,6 +18,7 @@ const Sidebar = () => {
           onClick={() =>{
             if(window.location.pathname !== '/') {
               setSelectedOption(option.name)
+              setSearch(false);
               navigate('/')
             } else {
               setSelectedOption(option.name)

@@ -4,10 +4,12 @@ const Context = createContext();
 
 const ContextProvider = ({ children }) =>{
   const [selectedOption, setSelectedOption] = useState("New");
+  const [leftOption, setLeftOption] = useState("Home");
   const [videos, setVideos] = useState(null);
   const [videoDetail, setVideoDetail] = useState(null);
   const [search, setSearch] = useState(false);
   const [channelDetail, setChannelDetail] = useState();
+  const [sideOpen, setSideOpen] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
     return <Context.Provider value={{
         selectedOption,
@@ -21,7 +23,11 @@ const ContextProvider = ({ children }) =>{
         search,
         setSearch,
         searchTerm,
-        setSearchTerm
+        setSearchTerm,
+        leftOption,
+        setLeftOption,
+        sideOpen,
+        setSideOpen
     }}>{children}</Context.Provider>;
 }
 

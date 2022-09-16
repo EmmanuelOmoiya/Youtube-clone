@@ -5,7 +5,7 @@ import Videos from './Videos.jsx';
 import { useAppContext } from '../utils/context';
 
 const Feed = () => {
-  const { selectedOption, videos, setVideos } = useAppContext();
+  const { selectedOption, videos, setVideos, sideOpen } = useAppContext();
   useEffect(() => {
     setVideos(null);
 
@@ -13,7 +13,7 @@ const Feed = () => {
       .then((data) => setVideos(data.items))
     }, [selectedOption]);
   return (
-    <div className="feed">
+    <div className={sideOpen ? "feed" : "feed close"} >
         { videos?.length > 0 
         ? 
         <Videos videos={videos} />

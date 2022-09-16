@@ -3,7 +3,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { Feed, NotFound, Sidebar, Topbar, ChannelDetail, VideoDetail, SearchFeed } from './components';
+import { Feed, NotFound, Sidebar, LeftBar, Topbar, ChannelDetail, VideoDetail, SearchFeed } from './components';
 import './styles/index.css';
   function App() {
     return (
@@ -11,6 +11,7 @@ import './styles/index.css';
       <Router>
         <Topbar />
         <Sidebar />
+        <LeftBar />
         <Routes>
           <Route path="*" element={<NotFound/>} />
           <Route path="/" element={<Feed />} exact />

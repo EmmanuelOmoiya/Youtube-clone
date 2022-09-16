@@ -16,10 +16,74 @@ img.searchBtn{
 
 .logo{
     margin-left: -1rem;
+    cursor: pointer;
+}
+
+.opun{
+    display: none;
+}
+
+.hamburger{
+    display: none;
 }
 
 @media screen and (min-width: 750px) {
     .topbar{
         position: fixed;
+        width: 100%;
+        z-index: 2;
+        height: 4rem;
+        border-bottom: none;
+    }
+
+    .logo{
+        margin-left: 2.1rem;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .opun{
+        display: block;
+    }
+
+    .searchOpinp{
+        width: 18rem;
+        border: none;
+        height: 1.9rem;
+        border-radius: 5px;
+        padding: 0.9rem;
+        background-color: #313231;
+        font-family: 'Manrope', sans-serif;
+    }
+
+    .opip{
+        margin-left: -1.7rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    img.searchBtn{
+        margin-bottom: -0.3rem;
+    }
+
+    .hamburger{
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+    }
+
+    .bar{
+        height: 1px;
+        display: block;
+        width: 100%;
+        margin-bottom: .4rem;
+        background-color: #fff;
+        color: #fff;
+        border-radius: 8px;
     }
 }
